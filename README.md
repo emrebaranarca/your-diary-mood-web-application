@@ -1,3 +1,5 @@
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/emrebaranarca/your-diary-mood-web-application/blob/main/README.en.md)
+
 **Bu uygulama rational unified process yazılım geliştirme süreci ile hazırlanmıştır. Tüm uygulama yazılım mimarisi ile geliştirilmiştir.**
 
 **Kullanılan yazılım mimarisi:** Layered architecture (monolithic)
