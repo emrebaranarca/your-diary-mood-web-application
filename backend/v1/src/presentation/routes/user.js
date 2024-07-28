@@ -1,9 +1,9 @@
-const express=require('express')
-const router=express.Router()
-const userController=require('../controllers/user')
+const express = require('express');
+const router = express.Router();
+const userController = require('../controllers/user');
+const validateJWT = require('../middlewares/validateJWT');
 
-router.route('/upload-profil-picture').post(userController.validateJWT,userController.uploadProfilePicture)
-router.route('/get-user').get(userController.validateJWT,userController.getUser)
+router.post('/upload-profile-picture', validateJWT, (req, res) => userController.uploadProfilePicture(req, res));
+router.get('/get-user', validateJWT, (req, res) => userController.getUser(req, res));
 
-
-module.exports=router
+module.exports = router;
